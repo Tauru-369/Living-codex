@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Living Codex | Tauru</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-black text-gold font-sans">
+  <div id="app" class="min-h-screen flex flex-col items-center justify-center px-4">
+    <header class="text-center mb-10">
+      <h1 class="text-4xl font-extrabold tracking-widest uppercase">The Living Codex</h1>
+      <p class="text-sm text-gray-400 uppercase mt-2">Sovereign Shield Interface</p>
+    </header>
+
+    <section class="w-full max-w-3xl mb-10">
+      <div class="bg-gray-900 rounded-2xl p-6 shadow-2xl border border-yellow-500">
+        <h2 class="text-2xl mb-4 font-semibold text-gold">Login Portal</h2>
+        <form id="loginForm" class="flex flex-col space-y-4">
+          <input type="text" id="username" placeholder="Username" class="p-3 rounded bg-gray-800 text-white border border-gray-700" />
+          <input type="password" id="password" placeholder="Password" class="p-3 rounded bg-gray-800 text-white border border-gray-700" />
+          <button type="submit" class="bg-gold text-black font-bold px-4 py-2 rounded hover:bg-yellow-400 transition">Enter</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="modules" class="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="module-card">Sigils & Glyphs</div>
+      <div class="module-card">Primal Sound Shields</div>
+      <div class="module-card">Crystal Grid Armor</div>
+      <div class="module-card">Mirror Codes</div>
+    </section>
+
+    <footer class="text-sm text-gray-600 mt-10">
+      <p>&copy; 2025 Tauru | Sovereign Codex</p>
+    </footer>
+  </div>
+
+  <script src="scripts/auth.js"></script>
+</body>
+</html>
